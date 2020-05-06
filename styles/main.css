@@ -209,12 +209,18 @@ body {
     background: url(../images/star-active.svg) center no-repeat; }
 
 .card-list {
-  max-width: 944px;
   margin: 0 auto; }
 
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, 200px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   grid-gap: 50px 48px; }
+
+@media screen and (min-width: 1023px) {
+  .container {
+    grid-template-columns: repeat(4, 200px); } }
 
 /*# sourceMappingURL=main.css.map */
